@@ -8,10 +8,10 @@ The toolkit currently has no installation options. Simply check out the git repo
 
 ## Tools
 
-# `sessionize.py`: Convert a .jsonl pippa dataset into a sessionized dataset.
-# `calc-perplexity.py`: Calculate the perplexity of the entries in a given sessionized dataset, given a specific model (defaults to mistral-7b v1.0)
-# `mgr-perplexity.py`: Given the output produced by the above, order the entries by perplexity, and optionally trim out all entries above a given perplexity threshold.
-# `clusterize.py`: Given a session, cluster the entries into heuristically maximally diverse groups using inverse cosine similarity.
+1. `sessionize.py`: Convert a .jsonl pippa dataset into a sessionized dataset.
+2. `calc-perplexity.py`: Calculate the perplexity of the entries in a given sessionized dataset, given a specific model (defaults to mistral-7b v1.0)
+3. `mgr-perplexity.py`: Given the output produced by the above, order the entries by perplexity, and optionally trim out all entries above a given perplexity threshold.
+4. `clusterize.py`: Given a session, cluster the entries into heuristically maximally diverse groups using inverse cosine similarity.
 
 Doing the above 4 steps, you should be able to create a polished dataset for use in calibrating a quantized LLM model.
 
