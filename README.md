@@ -13,6 +13,6 @@ The toolkit currently has no installation options. Simply check out the git repo
 3. `mgr-perplexity.py`: Given the output produced by the above, order the entries by perplexity, and optionally trim out all entries above a given perplexity threshold.
 4. `clusterize.py`: Given a session, cluster the entries into heuristically maximally diverse groups using inverse cosine similarity.
 
-Doing the above 4 steps, you should be able to create a polished dataset for use in calibrating a quantized LLM model.
+Doing the above 4 steps, you should be able to create a polished dataset for use in calibrating a quantized LLM model. (TODO: Converting sessionized dataset to a dataset with 8192 tokens and 200 rows, similar to the PIPPA dataset, which is probably needed for Exl2 at least.)
 
 To fine tune the quantization even further (although this is very time consuming), you may choose to do the perplexity calculations against the model being quantized. This will potentially give an even more fine tuned calibration dataset.
